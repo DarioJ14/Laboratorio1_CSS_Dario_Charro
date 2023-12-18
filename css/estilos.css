@@ -1,0 +1,307 @@
+/*Fuentes externas*/
+
+@font-face {
+    font-family: 'font_Inter-Regular';
+    src: url(../font/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'font_Inter-SemiBold';
+    src: url(../font/Inter-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'font_Romanesco-Regular';
+    src: url(../font/Romanesco-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    font-family: 'font_Inter-Regular';
+    height: 70px;
+    background-color: #A3A656;
+}
+
+header li:hover,
+header span:hover {
+    cursor: pointer;
+    color: #FFFF00;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    width: 80%;
+    gap: 3%;
+    padding-left: 70px;
+    margin: 0px;
+}
+
+#user {
+    float: inline-end;
+    display: flex;
+    align-items: center;
+    width: 12.5%;
+    font-size: 14px;
+}
+
+#user span {
+    margin-left: 12px;
+}
+
+#language {
+    float: inline-end;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+img[alt="Spain flag"] {
+    margin: 0px 10px;
+}
+
+#cover-image {
+    background-image: url("../img/main.png");
+    background-size: cover;
+    height: 650px;
+    position: relative;
+}
+
+#cover-image h1 {
+    margin: 0;
+    font-family: 'font_Romanesco-Regular';
+    font-size: 96px;
+    font-weight: 400;
+    position: absolute;
+    top: 160px;
+    left: 190px;
+}
+
+#cover-image p {
+    margin: 0;
+    position: absolute;
+    font-family: 'font_Inter-SemiBold';
+    font-size: 32px;
+    left: 190px;
+    top: 290px;
+    width: 600px;
+}
+
+#reservation-form {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F6F6;
+    font-family: 'font_Inter-Regular';
+}
+
+#reservation-form label {
+    margin-right: 1%;
+}
+
+input[name='reservation'] {
+    margin-right: 2.5%;
+    width: 20%;
+}
+
+#reservation-form input {
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+input[name='promotional-code'] {
+    width: 15%;
+    padding-left: 1.2%;
+}
+
+::placeholder {
+    color: #9E9A9A;
+    opacity: 1;
+    /* Firefox */
+}
+
+::-ms-input-placeholder {
+    /* Edge */
+    color: #9E9A9A;
+}
+
+#service-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 134px;
+}
+
+.service {
+    text-align: center;
+    width: 25%;
+}
+
+.service img {
+    width: 100%;
+}
+
+.img-description {
+    text-align: left;
+    font-family: 'font_Inter-Regular';
+    font-size: 14px;
+}
+
+.service span {
+    float: inline-start;
+    font-family: 'font_Inter-SemiBold';
+    font-size: 32px;
+}
+
+.service button {
+    float: inline-end;
+    border: none;
+    border-radius: 35px;
+    padding: 12px 41px;
+    font-family: 'font_Inter-Regular';
+    font-weight: bold;
+    color: #FFF;
+    background-color: #A3A656;
+    cursor: pointer;
+}
+
+.service button:hover {
+    background-color: #384001;
+}
+
+.service-name {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'font_Inter-SemiBold';
+    font-size: 32px;
+    padding: 17px 20px;
+    background-color: #A3A656;
+    color: #FFF;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#membership-section {
+    height: 770px;
+    margin-top: 5%;
+    text-align: center;
+    background-color: #F2F6F6;
+}
+
+#membership-section h3 {
+    font-family: 'font_Inter-SemiBold';
+    font-size: 32px;
+    padding-top: 2.3%;
+    margin-bottom: 6%;
+}
+
+#membership-options {
+    display: flex;
+    justify-content: center;
+    gap: 12%;
+}
+
+.membership {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.membership div {
+    width: 255px;
+    height: 255px;
+    border: 10px solid #384001;
+    border-radius: 50%;
+}
+
+.membership img {
+    margin: 55px 0 0 0;
+}
+
+.membership p {
+    font-family: 'font_Inter-SemiBold';
+    font-size: 32px;
+    margin: 1.5% 0 12% 0;
+}
+
+.membership button {
+    background: #A3A656;
+    border: none;
+    color: #FFF;
+    font-family: 'font_Inter-Regular';
+    font-weight: bold;
+    border-radius: 35px;
+    padding: 20px 75px;
+    cursor: pointer;
+}
+
+.membership button:hover {
+    background: #384001;
+}
+
+.membership ul {
+    font-family: 'font_Inter-Regular';
+    font-size: 14px;
+    text-align: left;
+    padding: 0;
+    margin-top: 8%;
+}
+
+.membership li {
+    margin-top: 5%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    font-family: 'font_Inter-Regular';
+    height: 97px;
+    background: #384001;
+    color: #A3A656
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    width: 65%;
+    gap: 9%;
+    padding-left: 70px;
+    margin: 0px;
+}
+
+footer li:hover {
+    cursor: pointer;
+    color: #FFFF00;
+}
+
+#redes_sociales {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#redes_sociales a {
+    margin-right: 7%;
+}
+
+#redes_sociales span {
+    margin-right: 5%;
+}
