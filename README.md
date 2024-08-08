@@ -1,1 +1,1 @@
-Laboratorio 1 CSS - Dario Charro
+Página web usable y accesible
